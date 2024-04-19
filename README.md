@@ -1,4 +1,6 @@
+<div align=center>
 <img src="https://github.com/x-xsDong/MetroPlus/blob/main/LOGO2.png" width="600px">
+</div><br>
 
 📖项目介绍
 ===
