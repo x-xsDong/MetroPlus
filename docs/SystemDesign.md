@@ -4,7 +4,9 @@
 
 MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如下：
 
-<img src="../pics/../image/system_architecture.png" />
+<div align = "center">
+    <img src="../pics/../image/system_architecture.png" />
+</div>
 
 ### 1.1 表示层（Presentation Layer）
 
@@ -26,7 +28,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ## 二、组件设计
 
 <div align = "center">
-    <img src="../image/package_diagram.png" />
+    <img src="../image/package_diagram.png" width = "80%"/>
 </div>
 
 ## 三、组件接口设计
@@ -34,7 +36,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ### 3.1 数据库接口
 
 <div align = "center">
-    <img src="../pics/Interface_DataBase.png" />
+    <img src="../image/interface_database.png" width = "50%"/>
 </div>
 
 - `saveHistoryRecord(record: HistoryRecord): void`：保存导航记录。
@@ -45,7 +47,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 
 
 <div align = "center">
-    <img src="../image/interface_useAccount.png" />
+    <img src="../image/interface_userAccount.png" width = "50%"/>
 </div>
 
 - `saveUserAccount(UserId: String, password: String, email: String)`：保存用户信息。
@@ -56,7 +58,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 
 
 <div align = "center">
-    <img src="../image/interface_routePlanning.png" />
+    <img src="../image/interface_routePlanning.png" width = "50%"/>
 </div>
 
 - `getRoute(startSta: String, endSta: String, mode: int): String `：输入起、终点及规划模式（如站点最少、距离最短等），获取地铁线路。
@@ -67,7 +69,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 
 
 <div align = "center">
-    <img src="../image/interface_userInterface.png" />
+    <img src="../image/interface_userInterface.png" width = "20%"/>
 </div>
 
 - `showRoutePlanning(): void`：显示路径规划界面。
@@ -80,7 +82,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ### 3.5 页面控制接口
 
 <div align = "center">
-    <img src="../image/interface_pageController.png" />
+    <img src="../image/interface_pageController.png" width = "20%"/>
 </div>
 
 - `+getToPage(page: String)`：表示该接口具有一个公共方法 `getToPage`，该方法接受一个参数 `page`，类型为 `String`，用于获取指定页面的内容。
@@ -88,7 +90,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ### 3.6 路径记录类
 
 <div align = "center">
-    <img src="../pics/class_routeRecord.png" />
+    <img src="../image/class_routeRecord.png" width = "30%"/>
 </div>
 
 - `timestamp: DateTime`：时间戳属性。
@@ -103,7 +105,7 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ## 四、 系统流程分析
 
 <div align = "center">
-    <img src="../image/UseCase.png" />
+    <img src="../image/UseCase.png" width = "30%"/>
 </div>
 
 结合上述用例图，我们得出以下的时序图：
@@ -111,11 +113,11 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 ### 4.1 路径规划时序图
 
 <div align = "center">
-    <img src="../image/Sequence_RoutePlanning.png" />
+    <img src="../image/Sequence_RoutePlanning.png" width = "40%"/>
 </div>
 
 ### 4.2 实时地铁时序图
 
 <div align = "center">
-    <img src="../pics/Sequence_RealtimeMetro.png" />
+    <img src="../image/Sequence_RealtimeMetro.png" width = "30%"/>
 </div>
