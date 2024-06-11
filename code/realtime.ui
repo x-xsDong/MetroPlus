@@ -1,0 +1,2251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>realTime</class>
+ <widget class="QWidget" name="realTime">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MetroPlus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/new/prefix1/image/logo.png</normaloff>:/new/prefix1/image/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/image/LOGO2.png);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="menuBg">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>850</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(240, 240, 240,150);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="menuWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>171</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>172</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="menu">
+     <item>
+      <widget class="QPushButton" name="travel">
+       <property name="styleSheet">
+        <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>出行</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="routePlanning">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>路线规划     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/routePlanningIcon.png</normaloff>:/new/prefix1/image/routePlanningIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="realTime_2">
+         <property name="styleSheet">
+          <string notr="true">font: 13pt Microsoft YaHei UI;color: rgb(255, 255, 255);border-radius: 8px;background-color: rgba(0,0,0, 70);</string>
+         </property>
+         <property name="text">
+          <string>实时地铁     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/realTimeIcon.png</normaloff>:/new/prefix1/image/realTimeIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="historyRoute">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>历史行程     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/operationTimeIcon.png</normaloff>:/new/prefix1/image/operationTimeIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="operationTime">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>运营时间     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/historyRouteIcon.png</normaloff>:/new/prefix1/image/historyRouteIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="recommend">
+       <property name="styleSheet">
+        <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>推荐</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_5">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="hotPlace">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>热门地点     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/hotPlaceIcon.png</normaloff>:/new/prefix1/image/hotPlaceIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="person">
+       <property name="styleSheet">
+        <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>我的</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QScrollArea" name="realTimeScrollArea">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>60</y>
+     <width>971</width>
+     <height>791</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>4450</width>
+      <height>779</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>4450</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="line1Title_13">
+     <property name="geometry">
+      <rect>
+       <x>2470</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约4分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_14">
+     <property name="geometry">
+      <rect>
+       <x>2240</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通7号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_7">
+     <property name="geometry">
+      <rect>
+       <x>2225</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1In_7">
+     <property name="geometry">
+      <rect>
+       <x>2240</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>横店 ⇔ 青龙山地铁小镇 全程68.85公里 33站 | 票价：2-10元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line7ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>2230</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>1100</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>1100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap7.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1Infor">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通1号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约4分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1In">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>汉口北 ⇔ 径河 全程38.54公里 32站 | 票价：2-8元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line1ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>1067</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>1067</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap1.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2Infor">
+     <property name="geometry">
+      <rect>
+       <x>375</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_1">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通2号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约3分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2In">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>天河机场 ⇔ 佛祖岭 全程60.8公里 38站 | 票价：2-10元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line2ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>1266</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>1266</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap2.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2Title_2">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通3号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Infor_2">
+     <property name="geometry">
+      <rect>
+       <x>745</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2In_2">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>宏图大道 ⇔ 沌阳大道 全程30公里 24站 | 票价：2-7元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_3">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约6分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line3ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>800</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap3.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2Infor_3">
+     <property name="geometry">
+      <rect>
+       <x>1115</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_4">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通4号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2In_3">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>柏林 ⇔ 武汉火车站 全程50公里 37站 | 票价：2-9元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line4ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>1120</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>1233</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>1233</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap4.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2Title_5">
+     <property name="geometry">
+      <rect>
+       <x>1360</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约4分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line5ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>1490</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap5.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2Title_6">
+     <property name="geometry">
+      <rect>
+       <x>1500</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通5号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_7">
+     <property name="geometry">
+      <rect>
+       <x>1730</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约4分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Infor_4">
+     <property name="geometry">
+      <rect>
+       <x>1485</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2In_4">
+     <property name="geometry">
+      <rect>
+       <x>1500</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>武汉站东广场 ⇔ 红霞 全程37.7公里 27站 | 票价：2-8元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line6ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>1860</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>1066</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>1066</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap6.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line2In_5">
+     <property name="geometry">
+      <rect>
+       <x>1870</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>新城十一路 ⇔ 东风公司 全程42.95公里 32站 | 票价：2-7元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_8">
+     <property name="geometry">
+      <rect>
+       <x>2100</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约5分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Infor_5">
+     <property name="geometry">
+      <rect>
+       <x>1855</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line2Title_9">
+     <property name="geometry">
+      <rect>
+       <x>1870</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通6号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_8">
+     <property name="geometry">
+      <rect>
+       <x>2595</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_24">
+     <property name="geometry">
+      <rect>
+       <x>2610</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通8号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_25">
+     <property name="geometry">
+      <rect>
+       <x>2840</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约6分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1In_13">
+     <property name="geometry">
+      <rect>
+       <x>2610</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>金潭路 ⇔ 军运村 全程39公里 26站 | 票价：2-8元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line8ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>2600</x>
+       <y>80</y>
+       <width>341</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>329</width>
+        <height>866</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>866</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap8.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1Title_26">
+     <property name="geometry">
+      <rect>
+       <x>3210</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约9分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1In_14">
+     <property name="geometry">
+      <rect>
+       <x>2980</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>武汉东站 ⇔ 葛店南站 全程22.6公里 14站 | 票价：2-6元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_27">
+     <property name="geometry">
+      <rect>
+       <x>2980</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通11号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_13">
+     <property name="geometry">
+      <rect>
+       <x>2965</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line11ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>2970</x>
+       <y>80</y>
+       <width>321</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>319</width>
+        <height>689</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap11.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1In_15">
+     <property name="geometry">
+      <rect>
+       <x>3350</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>国博中心南 ⇔ 通航机场 全程37.32公里 14站 | 票价：2-8元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_14">
+     <property name="geometry">
+      <rect>
+       <x>3335</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_29">
+     <property name="geometry">
+      <rect>
+       <x>3350</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通16号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line16ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>3340</x>
+       <y>80</y>
+       <width>311</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>309</width>
+        <height>689</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap16.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1Title_28">
+     <property name="geometry">
+      <rect>
+       <x>3580</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约8分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="line19ScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>3710</x>
+       <y>80</y>
+       <width>321</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>319</width>
+        <height>689</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMap19.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1Title_30">
+     <property name="geometry">
+      <rect>
+       <x>3720</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通19号线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1In_16">
+     <property name="geometry">
+      <rect>
+       <x>3720</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>武汉站西广场 ⇔ 新月溪公园 全程23.3公里 7站 | 票价：2-6元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_15">
+     <property name="geometry">
+      <rect>
+       <x>3705</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="lineYangLuoScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>4080</x>
+       <y>80</y>
+       <width>321</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_18">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>319</width>
+        <height>689</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/image/lineMapYangLuo.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="line1In_17">
+     <property name="geometry">
+      <rect>
+       <x>4090</x>
+       <y>50</y>
+       <width>500</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font: 9pt &quot;微软雅黑&quot;;
+color: rgb(125, 125, 125);</string>
+     </property>
+     <property name="text">
+      <string>后湖大道 ⇔ 金台 全程35.01公里 16站 | 票价：2-8元</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Infor_16">
+     <property name="geometry">
+      <rect>
+       <x>4075</x>
+       <y>10</y>
+       <width>351</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 12px;
+font: 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_32">
+     <property name="geometry">
+      <rect>
+       <x>4090</x>
+       <y>15</y>
+       <width>200</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>轨道交通阳逻线</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="line1Title_33">
+     <property name="geometry">
+      <rect>
+       <x>4320</x>
+       <y>15</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;
+border-width:0;
+border-style:outset;
+font:700 13pt &quot;微软雅黑&quot;;
+color: rgb(61, 213, 130);</string>
+     </property>
+     <property name="text">
+      <string>约8分钟/趟</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>line1Infor_16</zorder>
+    <zorder>line1Infor_15</zorder>
+    <zorder>line1Infor_14</zorder>
+    <zorder>line1Infor_13</zorder>
+    <zorder>line2Infor_5</zorder>
+    <zorder>line2Infor_4</zorder>
+    <zorder>line2Infor_2</zorder>
+    <zorder>line1Infor_7</zorder>
+    <zorder>line1Title_13</zorder>
+    <zorder>line1Title_14</zorder>
+    <zorder>line1In_7</zorder>
+    <zorder>line7ScrollArea</zorder>
+    <zorder>line1Infor</zorder>
+    <zorder>line1Title_1</zorder>
+    <zorder>line1Title</zorder>
+    <zorder>line1In</zorder>
+    <zorder>line1ScrollArea</zorder>
+    <zorder>line2Infor</zorder>
+    <zorder>line2Title_1</zorder>
+    <zorder>line2Title</zorder>
+    <zorder>line2In</zorder>
+    <zorder>line2ScrollArea</zorder>
+    <zorder>line2Title_2</zorder>
+    <zorder>line2In_2</zorder>
+    <zorder>line2Title_3</zorder>
+    <zorder>line3ScrollArea</zorder>
+    <zorder>line2Infor_3</zorder>
+    <zorder>line2Title_4</zorder>
+    <zorder>line2In_3</zorder>
+    <zorder>line4ScrollArea</zorder>
+    <zorder>line2Title_5</zorder>
+    <zorder>line5ScrollArea</zorder>
+    <zorder>line2Title_6</zorder>
+    <zorder>line2Title_7</zorder>
+    <zorder>line2In_4</zorder>
+    <zorder>line6ScrollArea</zorder>
+    <zorder>line2In_5</zorder>
+    <zorder>line2Title_8</zorder>
+    <zorder>line2Title_9</zorder>
+    <zorder>line1Infor_8</zorder>
+    <zorder>line1Title_24</zorder>
+    <zorder>line1Title_25</zorder>
+    <zorder>line1In_13</zorder>
+    <zorder>line8ScrollArea</zorder>
+    <zorder>line1Title_26</zorder>
+    <zorder>line1In_14</zorder>
+    <zorder>line1Title_27</zorder>
+    <zorder>line11ScrollArea</zorder>
+    <zorder>line1In_15</zorder>
+    <zorder>line1Title_29</zorder>
+    <zorder>line16ScrollArea</zorder>
+    <zorder>line1Title_28</zorder>
+    <zorder>line19ScrollArea</zorder>
+    <zorder>line1Title_30</zorder>
+    <zorder>line1In_16</zorder>
+    <zorder>lineYangLuoScrollArea</zorder>
+    <zorder>line1In_17</zorder>
+    <zorder>line1Title_32</zorder>
+    <zorder>line1Title_33</zorder>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+font: 12pt &quot;黑体&quot;;
+border-style:outset;
+color: rgba(0, 0, 0, 150);</string>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit_button">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { 
+background:transparent;
+font: 12pt &quot;黑体&quot;;
+border-style:outset;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+color: rgba(0, 0, 0, 200);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/image/exit_image.png</normaloff>:/new/prefix1/image/exit_image.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>15</width>
+     <height>15</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="profile_photo">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border-radius: 15px;
+border-image: url(:/new/prefix1/image/head1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>31</width>
+     <height>31</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cloth_button">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border-style:outset;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/image/cloth_image.png</normaloff>:/new/prefix1/image/cloth_image.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>15</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>realTimeScrollArea</zorder>
+  <zorder>menuBg</zorder>
+  <zorder>logo</zorder>
+  <zorder>menuWidget</zorder>
+  <zorder>username</zorder>
+  <zorder>exit_button</zorder>
+  <zorder>profile_photo</zorder>
+  <zorder>cloth_button</zorder>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

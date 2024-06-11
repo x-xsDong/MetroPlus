@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>historyRoute</class>
+ <widget class="QWidget" name="historyRoute">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MetroPlus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/new/prefix1/image/logo.png</normaloff>:/new/prefix1/image/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/image/LOGO2.png);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="menuBg">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>850</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(240, 240, 240,150);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="menuWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>171</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>172</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="menu">
+     <item>
+      <widget class="QPushButton" name="travel">
+       <property name="styleSheet">
+        <string notr="true">font:700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>出行</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_3">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="realTime">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>实时地铁     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/realTimeIcon.png</normaloff>:/new/prefix1/image/realTimeIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="historyRoute_2">
+         <property name="styleSheet">
+          <string notr="true">font: 13pt Microsoft YaHei UI;color: rgb(255, 255, 255);border-radius: 8px;background-color: rgba(0,0,0, 70);</string>
+         </property>
+         <property name="text">
+          <string>历史行程     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/operationTimeIcon.png</normaloff>:/new/prefix1/image/operationTimeIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="operationTime">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>运营时间     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/historyRouteIcon.png</normaloff>:/new/prefix1/image/historyRouteIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="routePlanning">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>路线规划     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/routePlanningIcon.png</normaloff>:/new/prefix1/image/routePlanningIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="recommend">
+       <property name="styleSheet">
+        <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>推荐</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_5">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="hotPlace">
+         <property name="styleSheet">
+          <string notr="true">QPushButton { 
+background:transparent;
+border-width:0;
+border-style:outset;
+font: 13pt &quot;微软雅黑&quot;;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+background-color: rgba(0,0,0,20);
+border-radius: 8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>热门地点     </string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/new/prefix1/image/hotPlaceIcon.png</normaloff>:/new/prefix1/image/hotPlaceIcon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="person">
+       <property name="styleSheet">
+        <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+background:transparent;
+border-width:0;
+border-style:outset;
+text-align : left;</string>
+       </property>
+       <property name="text">
+        <string>我的</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+font: 12pt &quot;黑体&quot;;
+border-style:outset;
+color: rgba(0, 0, 0, 150);</string>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit_button">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton { 
+background:transparent;
+font: 12pt &quot;黑体&quot;;
+border-style:outset;
+color: rgba(0, 0, 0, 150);
+ } 
+
+QPushButton:hover { 
+color: rgba(0, 0, 0, 200);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/image/exit_image.png</normaloff>:/new/prefix1/image/exit_image.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>15</width>
+     <height>15</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="profile_photo">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border-radius: 15px;
+border-image: url(:/new/prefix1/image/head1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>31</width>
+     <height>31</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cloth_button">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border-style:outset;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/image/cloth_image.png</normaloff>:/new/prefix1/image/cloth_image.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>15</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>332</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>320</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>1000</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <zorder>menuBg</zorder>
+  <zorder>logo</zorder>
+  <zorder>menuWidget</zorder>
+  <zorder>username</zorder>
+  <zorder>exit_button</zorder>
+  <zorder>profile_photo</zorder>
+  <zorder>cloth_button</zorder>
+  <zorder>scrollArea</zorder>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
