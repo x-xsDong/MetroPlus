@@ -121,3 +121,16 @@ MetroPlus桌面端应用采用分层架构的架构模式，架构示意图如�
 <div align = "center">
     <img src="../image/Sequence_RealtimeMetro.png" width = "30%"/>
 </div>
+
+### 4.3 历史行程时序图
+
+<div align = "center">
+    <img src="../image/Sequence_HistoryRoute.png" width = "30%"/>
+</div>
+
+### 4.4 运营时间时序图
+
+<div align = "center">
+    <img src="../image/Sequence_OperationTime.png" width = "30%"/>
+</div>
+
