@@ -1,1 +1,1 @@
-点击metroPlus.exe运行
+解压后点击metroPlus.exe运行
