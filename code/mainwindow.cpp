@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
 #include <QVBoxLayout>
@@ -44,8 +44,8 @@ void MainWindow::on_login_clicked()
     user=ui->user->text(); // 获取帐号框的内容
     password=ui->password->text();
 
-    ifstream accountFile("C:\\Users\\25423\\Documents\\metroPlus\\account.txt");
-    ifstream accountFile1("C:\\Users\\25423\\Documents\\metroPlus\\account.txt");
+    ifstream accountFile("./account.txt");
+    ifstream accountFile1("./account.txt");
     int n=0;
     bool isEnd = false;
     string tmp,tmp1,tmp2,tmp3;
@@ -120,7 +120,7 @@ void MainWindow::on_signup_ready_clicked()
         else if(strb.size()<6)
             QMessageBox::information(this,"提示","密码不能少于6个字符！");
         else{
-            fstream accountFile("C:\\Qt\\metroPlus\\account.txt", ios_base::out|ios_base::app);
+            fstream accountFile("./account.txt", ios_base::out|ios_base::app);
             accountFile<< stra << endl;
             accountFile<< strb << endl;
             accountFile<< strd << endl;

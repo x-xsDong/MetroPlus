@@ -1,4 +1,4 @@
-#include "historyroute.h"
+﻿#include "historyroute.h"
 #include "ui_historyroute.h"
 #include <fstream>
 #include <vector>
@@ -213,7 +213,7 @@ void historyRoute::receiveWhiteFont()
 void historyRoute::getHistory()
 {
     ui->scrollArea->viewport()->setStyleSheet("background:transparent;");
-    ifstream historyFile("C:\\Users\\25423\\Documents\\metroPlus\\history.txt");
+    ifstream historyFile("./history.txt");
     vector<string> history;
     string tmp;
     string bgColor[10]={"#FFEFF9,stop:1 #9984AF)","#1DE5E2,stop:1 #B588F7)",

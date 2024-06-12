@@ -1,4 +1,4 @@
-#include "ui_secondwidget.h"
+﻿#include "ui_secondwidget.h"
 #include "secondwidget.h"
 #include "routeplan.h"
 #include <QMessageBox>
@@ -280,7 +280,7 @@ void secondWidget::on_searchButton_clicked(bool checked)
     QDateTime system_time = QDateTime::currentDateTime();
     string time = system_time.toString("yyyy/MM/dd hh:mm").toStdString();
 
-    fstream history("C:\\Users\\25423\\Documents\\metroPlus\\history.txt", ios_base::out|ios_base::app);
+    fstream history("./history.txt", ios_base::out|ios_base::app);
     history<< route[0] << " "; // start station
     history<< route[route.size()-3] << " "; // end station
     for (auto i : line_sequence) {

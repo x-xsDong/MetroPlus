@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+﻿#define _CRT_SECURE_NO_WARNINGS 1
 
 #define MAXVEX 1000
 #define INF 32767
@@ -71,7 +71,7 @@ int add_vex(Vex p)
 
 void create_graph(int mode)
 {
-    ifstream file("C:\\Users\\25423\\Documents\\metroPlus\\map_addDist.txt");
+    ifstream file("./map_addDist.txt");
     int v1, v2; // v1 is the index of last station, v2 is the index of present station
     int line_cnt = 0;
     int type = 0; // used to find overlap situation
